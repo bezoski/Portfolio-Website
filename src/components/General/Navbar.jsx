@@ -53,7 +53,7 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden fixed inset-0 bg-neutral-night z-50">
             {/* Mobile Menu Header */}
-            <div className="flex justify-between items-center p-8">
+            <div className="flex justify-between items-center py-8 px-16">
               <img src={Logo} alt="Logo" />
               <button
                 onClick={toggleMenu}

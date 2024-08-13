@@ -32,13 +32,16 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex md:space-x-12">
-          <p className="text-secondary-battleship-gray font-merriweather text-body-s">
+          <p className="text-secondary-battleship-gray font-merriweather text-body-s text-center">
             Made by bezoski 2024
           </p>
           <img
             src={Logo}
             alt="Logo"
-            className="hidden md:flex w-[32px] h-[20px]"
+            className="hidden md:flex w-[32px] h-[20px] select-none"
+            draggable="false"
+            onmousedown="return false;"
+            oncontextmenu="return false;"
           />
         </div>
       </div>

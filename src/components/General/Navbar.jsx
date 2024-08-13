@@ -27,8 +27,14 @@ const Navbar = () => {
 
   return (
     <nav className="py-8 px-16">
-      <div className="mx-auto flex justify-between items-center">
-        <img src={Logo} alt="Logo" />
+      <div className="mx-auto flex justify-between items-center select-none">
+        <img
+          src={Logo}
+          alt="Logo"
+          draggable="false"
+          onmousedown="return false;"
+          oncontextmenu="return false;"
+        />
 
         {/* Navigation Links */}
         <ul className="hidden md:flex text-primary-floral-white space-x-8 font-merriweather text-body-m">

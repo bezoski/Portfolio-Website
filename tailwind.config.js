@@ -7,7 +7,8 @@ export default {
         hero: "url('./src/assets/Images/homeBackground.png')",
       },
       backgroundPosition: {
-        'custom-position': '60% 50%',
+        'custom-position-mobile': '60% 50%',
+        'custom-position': '50% 70%',
       },
       fontFamily: {
         karla: ['Karla', 'sans-serif'],

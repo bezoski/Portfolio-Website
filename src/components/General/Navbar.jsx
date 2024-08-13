@@ -5,6 +5,14 @@ import Logo from '../../assets/Images/logo.svg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoMdClose } from 'react-icons/io';
 
+const navLinks = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About' },
+  { path: '/resume', label: 'Resume' },
+  { path: '/works', label: 'Works' },
+  { path: '/contact', label: 'Contact' },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,37 +26,19 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="p-8">
+    <nav className="py-8 px-16">
       <div className="mx-auto flex justify-between items-center">
         <img src={Logo} alt="Logo" />
 
         {/* Navigation Links */}
         <ul className="hidden md:flex text-primary-floral-white space-x-8 font-merriweather text-body-m">
-          <li>
-            <NavLink to="/" className={navLinkActive}>
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/about" className={navLinkActive}>
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/resume" className={navLinkActive}>
-              Resume
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/works" className={navLinkActive}>
-              Works
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className={navLinkActive}>
-              Contact
-            </NavLink>
-          </li>
+          {navLinks.map(({ path, label }) => (
+            <li key={path}>
+              <NavLink to={path} className={navLinkActive}>
+                {label}
+              </NavLink>
+            </li>
+          ))}
         </ul>
 
         {/* Hamburger Menu Button */}
@@ -75,47 +65,13 @@ const Navbar = () => {
 
             {/* Mobile Navigation Links */}
             <ul className=" flex flex-col justify-center items-center space-y-5 font-merriweather text-primary-floral-white text-body-l mt-10">
-              <li>
-                <NavLink to="/" className={navLinkActive} onClick={toggleMenu}>
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  className={navLinkActive}
-                  onClick={toggleMenu}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/resume"
-                  className={navLinkActive}
-                  onClick={toggleMenu}
-                >
-                  Resume
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/works"
-                  className={navLinkActive}
-                  onClick={toggleMenu}
-                >
-                  Works
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  className={navLinkActive}
-                  onClick={toggleMenu}
-                >
-                  Contact
-                </NavLink>
-              </li>
+              {navLinks.map(({ path, label }) => (
+                <li key={path}>
+                  <NavLink to={path} className={navLinkActive}>
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         )}

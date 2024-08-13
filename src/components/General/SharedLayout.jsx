@@ -7,7 +7,7 @@ const SharedLayout = () => {
 
   const getBackgroundStyle = () => {
     if (location.pathname === '/') {
-      return 'bg-hero bg-cover bg-custom-position md:bg-center';
+      return 'bg-hero bg-cover bg-custom-position-mobile md:bg-custom-position';
     } else {
       return 'bg-neutral-night';
     }

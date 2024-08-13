@@ -32,8 +32,8 @@ const Navbar = () => {
           src={Logo}
           alt="Logo"
           draggable="false"
-          onmousedown="return false;"
-          oncontextmenu="return false;"
+          onMouseDown={(event) => event.preventDefault()}
+          onContextMenu={(event) => event.preventDefault()}
         />
 
         {/* Navigation Links */}

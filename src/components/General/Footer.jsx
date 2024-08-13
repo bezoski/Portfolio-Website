@@ -40,8 +40,8 @@ const Footer = () => {
             alt="Logo"
             className="hidden md:flex w-[32px] h-[20px] select-none"
             draggable="false"
-            onmousedown="return false;"
-            oncontextmenu="return false;"
+            onMouseDown={(event) => event.preventDefault()}
+            onContextMenu={(event) => event.preventDefault()}
           />
         </div>
       </div>

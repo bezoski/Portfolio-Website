@@ -6,6 +6,9 @@ export default {
       backgroundImage: {
         hero: "url('./src/assets/Images/homeBackground.png')",
       },
+      backgroundPosition: {
+        'custom-position': '60% 50%',
+      },
       fontFamily: {
         karla: ['Karla', 'sans-serif'],
         merriweather: ['Merriweather', 'serif'],
@@ -29,7 +32,6 @@ export default {
             lineHeight: '1.3',
             letterSpacing: '-0.025em',
             fontWeight: '700',
-            fontFamily: 'Karla',
           },
         ],
         'display-xl': [
@@ -38,7 +40,6 @@ export default {
             lineHeight: '1.3',
             letterSpacing: '-0.025em',
             fontWeight: '700',
-            fontFamily: 'Karla',
           },
         ],
         'display-l': [
@@ -47,7 +48,6 @@ export default {
             lineHeight: '1.3',
             letterSpacing: '-0.02em',
             fontWeight: '700',
-            fontFamily: 'Karla',
           },
         ],
         'display-m': [
@@ -56,7 +56,6 @@ export default {
             lineHeight: '1.3',
             letterSpacing: '-0.02em',
             fontWeight: '700',
-            fontFamily: 'Karla',
           },
         ],
         'display-s': [
@@ -65,7 +64,6 @@ export default {
             lineHeight: '1.3',
             letterSpacing: '-0.01em',
             fontWeight: '700',
-            fontFamily: 'Karla',
           },
         ],
         'display-xs': [
@@ -74,7 +72,6 @@ export default {
             lineHeight: '1.3',
             letterSpacing: '0',
             fontWeight: '700',
-            fontFamily: 'Karla',
           },
         ],
         'body-xl': [
@@ -83,7 +80,6 @@ export default {
             lineHeight: '1.4',
             letterSpacing: '0',
             fontWeight: '400',
-            fontFamily: 'Merriweather',
           },
         ],
         'body-l': [
@@ -92,7 +88,6 @@ export default {
             lineHeight: '1.45',
             letterSpacing: '0',
             fontWeight: '400',
-            fontFamily: 'Merriweather',
           },
         ],
         'body-m': [
@@ -101,7 +96,6 @@ export default {
             lineHeight: '1.45',
             letterSpacing: '0',
             fontWeight: '400',
-            fontFamily: 'Merriweather',
           },
         ],
         'body-s': [
@@ -110,7 +104,6 @@ export default {
             lineHeight: '1.6',
             letterSpacing: '0',
             fontWeight: '400',
-            fontFamily: 'Merriweather',
           },
         ],
         'body-xs': [
@@ -119,7 +112,6 @@ export default {
             lineHeight: '1.6',
             letterSpacing: '0',
             fontWeight: '400',
-            fontFamily: 'Merriweather',
           },
         ],
       },

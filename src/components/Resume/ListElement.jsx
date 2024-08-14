@@ -15,7 +15,7 @@ const ListElement = ({ icon, text }) => {
         <p className="font-merriweather text-body-m text-primary-floral-white mt-1">
           {text}
         </p>
-        <div className="w-[216px] lg:w-[226px] h-[4px] bg-primary-floral-white rounded-sm mt-auto" />
+        <div className="w-full h-[4px] bg-primary-floral-white rounded-sm mt-auto" />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import ListElement from './ListElement';
 
 const SoftwareSkills = () => {
   return (
-    <div className="w-full ">
+    <div className="w-full md:w-[90%]">
       <TitleHeader title="Software Skills" />
       {softwareSkills.map((software) => (
         <div key={software.id}>

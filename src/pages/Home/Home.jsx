@@ -5,7 +5,7 @@ import PageNumber from '../../components/General/PageNumber';
 
 const Home = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center md:items-start h-full lg:mx-[10%] md:mx-16">
+    <div className="relative flex flex-col justify-center items-center md:items-start h-full lg:mx-[13%] md:mx-16">
       <h1 className="font-karla text-display-m md:text-display-l lg:text-display-xl text-primary-floral-white uppercase text-center md:text-left">
         Hello, I&apos;m Rafał
       </h1>

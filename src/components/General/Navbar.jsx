@@ -26,7 +26,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="py-8 px-16">
+    <nav className="py-8 px-16 bg-neutral-night">
       <div className="mx-auto flex justify-between items-center select-none">
         <img
           src={Logo}

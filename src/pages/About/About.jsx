@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import PageNumber from '../../components/General/PageNumber';
 import Subtitle from '../../components/About/Subtitle';
 import Title from '../../components/About/Title';
@@ -5,26 +7,35 @@ import SocialLinks from '../../components/About/SocialLinks';
 import Description from '../../components/About/Description';
 import Button from '../../components/About/Button';
 
+import avatar from '../../assets/Images/avatar.png';
+
 const About = () => {
   return (
-    <div className="relative flex flex-col h-full md:mx-16 lg:mx-[10%] border border-red-300">
-      <div className="flex flex-col justify-center items-center md:flex-row mt-20">
-        <div className="md:w-[50%] flex flex-col justify-center md:justify-start">
+    <div className="relative flex flex-col min-h-full mx-4 md:mx-16 lg:mx-[13%]">
+      <div className="flex flex-col justify-center items-center md:flex-row mt-4">
+        <div className="md:w-[60%] flex flex-col justify-center md:justify-start">
           <Subtitle />
           <Title />
           <SocialLinks />
           <Description />
-          <div>
-            <Button
-              text="Resume"
-              color="neutral-night"
-              background="primary-flame"
-            />
-            <Button text="My works" color="primary-flame" background="" />
+          <div className="mt-6 md:mt-12 flex justify-center md:justify-start">
+            <Link to="/resume">
+              <Button text="Resume" fill={true} />
+            </Link>
+            <Link to="/works">
+              <Button text="My works" fill={false} />
+            </Link>
           </div>
         </div>
-        <div className="md:w-[50%] flex justify-center md:justify-end">
-          photo
+        <div className="md:w-[40%] flex justify-center">
+          <img
+            src={avatar}
+            alt="Avatar"
+            className="w-[190px] h-[190px] md:w-[296px] md:h-[296px] lg:w-[400px] lg:h-[400px] mt-6 mb-9 md:mb-0 rounded-full border border-secondary-battleship-gray select-none"
+            draggable="false"
+            onMouseDown={(event) => event.preventDefault()}
+            onContextMenu={(event) => event.preventDefault()}
+          />
         </div>
       </div>
 

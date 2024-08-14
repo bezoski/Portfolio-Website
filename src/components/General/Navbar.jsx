@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
 
 import Logo from '../../assets/Images/logo.svg';
@@ -28,13 +28,15 @@ const Navbar = () => {
   return (
     <nav className="py-8 px-16 bg-neutral-night">
       <div className="mx-auto flex justify-between items-center select-none">
-        <img
-          src={Logo}
-          alt="Logo"
-          draggable="false"
-          onMouseDown={(event) => event.preventDefault()}
-          onContextMenu={(event) => event.preventDefault()}
-        />
+        <Link to="/">
+          <img
+            src={Logo}
+            alt="Logo"
+            draggable="false"
+            onMouseDown={(event) => event.preventDefault()}
+            onContextMenu={(event) => event.preventDefault()}
+          />
+        </Link>
 
         {/* Navigation Links */}
         <ul className="hidden md:flex text-primary-floral-white space-x-8 font-merriweather text-body-m">
@@ -60,7 +62,9 @@ const Navbar = () => {
           <div className="md:hidden fixed inset-0 bg-neutral-night z-50">
             {/* Mobile Menu Header */}
             <div className="flex justify-between items-center py-8 px-16">
-              <img src={Logo} alt="Logo" />
+              <Link to="/">
+                <img src={Logo} alt="Logo" onClick={toggleMenu} />
+              </Link>
               <button
                 onClick={toggleMenu}
                 className="text-white text-3xl focus:outline-none"
@@ -73,7 +77,11 @@ const Navbar = () => {
             <ul className=" flex flex-col justify-center items-center space-y-5 font-merriweather text-primary-floral-white text-body-l mt-10">
               {navLinks.map(({ path, label }) => (
                 <li key={path}>
-                  <NavLink to={path} className={navLinkActive}>
+                  <NavLink
+                    to={path}
+                    className={navLinkActive}
+                    onClick={toggleMenu}
+                  >
                     {label}
                   </NavLink>
                 </li>

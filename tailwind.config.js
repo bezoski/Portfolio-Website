@@ -3,6 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      boxShadow: {
+        'inner-custom': 'inset 0 0 4px rgba(0, 0, 0, 0.4)',
+        'drop-custom': '0 0 4px 2px rgba(255, 255, 255, 0.15)',
+      },
       backgroundImage: {
         hero: "url('./src/assets/Images/homeBackground.png')",
       },

@@ -8,8 +8,8 @@ const Works = () => {
   const secondLastProject = Projects[Projects.length - 2];
 
   return (
-    <div className="relative flex flex-col h-full md:mx-16 lg:mx-[10%] border border-red-300">
-      <div className="flex flex-row justify-between border">
+    <div className="relative flex flex-col h-full md:mx-16 lg:mx-[13%]">
+      <div className="flex flex-row justify-between">
         <div>
           <h1 className="font-karla text-display-xs md:text-display-m lg:text-display-xl text-primary-flame mt-1 text-left">
             My recent projects
@@ -24,7 +24,7 @@ const Works = () => {
           </button>
         </div>
       </div>
-      <div className="mt-3 flex flex-col items-center">
+      <div className="mt-4 flex flex-col items-center">
         <div className="flex flex-col md:flex-row justify-between">
           <ProjectImage image={lastProject.image} />
           <ProjectDescription
@@ -34,7 +34,7 @@ const Works = () => {
             demoLink={lastProject.demoLink}
           />
         </div>
-        <div className="flex flex-col-reverse md:flex-row justify-between mb-14 md:mb-0">
+        <div className="flex flex-col-reverse md:flex-row justify-between mt-6 mb-14 md:mb-12">
           <ProjectDescription
             title={secondLastProject.projectName}
             description={secondLastProject.description}

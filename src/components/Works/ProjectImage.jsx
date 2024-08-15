@@ -1,6 +1,6 @@
 const ProjectImage = ({ image }) => {
   return (
-    <div className="flex justify-center items-center md:w-1/2 py-2 px-2 bg-secondary-gunmetal rounded-2xl">
+    <div className="flex justify-center items-center mt-4 md:mt-0 md:w-1/2 py-2 px-2 bg-secondary-gunmetal rounded-2xl">
       <img
         src={image}
         alt="project"

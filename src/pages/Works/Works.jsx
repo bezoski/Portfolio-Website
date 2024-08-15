@@ -19,13 +19,13 @@ const Works = () => {
           </p>
         </div>
         <div>
-          <button className="w-[74px] h-[24px] md:w-[80px] md:h-[32px] lg:w-[110px] lg:h-[50px] mt-2 font-merriweather lg:font-karla text-body-s md:text-body-m lg:text-display-xs text-primary-floral-white bg-primary-flame rounded hover:bg-transparent hover:border hover:border-primary-flame hover:text-primary-flame">
+          <button className="w-[74px] h-[24px] md:w-[80px] md:h-[32px] lg:w-[110px] lg:h-[50px] mt-2 font-merriweather lg:font-karla text-body-s md:text-body-m lg:text-display-xs text-primary-floral-white bg-primary-flame rounded  hover:bg-primary-floral-white hover:text-neutral-night">
             More
           </button>
         </div>
       </div>
-      <div className="mt-3">
-        <div className="flex justify-between">
+      <div className="mt-3 flex flex-col items-center">
+        <div className="flex flex-col md:flex-row justify-between">
           <ProjectImage image={lastProject.image} />
           <ProjectDescription
             title={lastProject.projectName}
@@ -34,7 +34,7 @@ const Works = () => {
             demoLink={lastProject.demoLink}
           />
         </div>
-        <div className="flex justify-between">
+        <div className="flex flex-col-reverse md:flex-row justify-between mb-14 md:mb-0">
           <ProjectDescription
             title={secondLastProject.projectName}
             description={secondLastProject.description}

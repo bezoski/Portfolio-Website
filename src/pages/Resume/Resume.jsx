@@ -27,7 +27,7 @@ const Resume = () => {
           <Hobbies />
         </div>
       </div>
-      <div className="absolute bottom-0 left-0  w-full flex justify-center md:justify-start">
+      <div className="absolute bottom-0 left-0 w-full flex justify-center md:justify-start">
         <PageNumber number="3" />
       </div>
     </div>

@@ -3,7 +3,7 @@ import { HiOutlineSignal } from 'react-icons/hi2';
 
 const ProjectDescription = ({ title, description, githubLink, demoLink }) => {
   return (
-    <div className="flex flex-col mt-4 md:mt-0 md:w-1/2 items-center md:items-start">
+    <div className="flex flex-col mt-4 md:mt-0 md:w-[60%] items-center md:items-start">
       <h1 className="font-karla text-display-s text-primary-flame">{title}</h1>
       <p className="font-merriweather text-body-xs md:text-body-s lg:text-body-m mt-2 w-[80%] md:w-full text-center md:text-left text-primary-floral-white">
         {description}

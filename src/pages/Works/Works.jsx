@@ -9,8 +9,8 @@ const Works = () => {
 
   return (
     <div className="relative flex flex-col h-full md:mx-16 lg:mx-[13%]">
-      <div className="flex flex-row justify-between">
-        <div>
+      <div className="flex flex-row justify-center md:justify-between">
+        <div className="w-[70%]">
           <h1 className="font-karla text-display-xs md:text-display-m lg:text-display-xl text-primary-flame mt-1 text-left">
             My recent projects
           </h1>
@@ -26,7 +26,7 @@ const Works = () => {
       </div>
       <div className="mt-4 flex flex-col items-center">
         <div className="flex flex-col md:flex-row justify-between">
-          <ProjectImage image={lastProject.image} />
+          <ProjectImage image={lastProject.image} align="justify-start" />
           <ProjectDescription
             title={lastProject.projectName}
             description={lastProject.description}
@@ -41,7 +41,7 @@ const Works = () => {
             githubLink={secondLastProject.githubLink}
             demoLink={secondLastProject.demoLink}
           />
-          <ProjectImage image={secondLastProject.image} />
+          <ProjectImage image={secondLastProject.image} align="justify-end" />
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full flex justify-center md:justify-start ">

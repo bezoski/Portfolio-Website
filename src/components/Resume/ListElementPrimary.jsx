@@ -1,4 +1,4 @@
-const ListElement = ({ icon, text }) => {
+const ListElementPrimary = ({ icon, text }) => {
   let boxShadow = 'shadow-inner-custom shadow-drop-custom';
   return (
     <div className="flex flex-row space-x-4 mt-2">
@@ -21,4 +21,4 @@ const ListElement = ({ icon, text }) => {
   );
 };
 
-export default ListElement;
+export default ListElementPrimary;

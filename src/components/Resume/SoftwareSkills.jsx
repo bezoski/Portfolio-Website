@@ -1,14 +1,17 @@
 import softwareSkills from '../../assets/Data/softwareSkills';
 import TitleHeader from './TitleHeader';
-import ListElement from './ListElement';
+import ListElementPrimary from './ListElementPrimary';
 
 const SoftwareSkills = () => {
   return (
-    <div className="w-full md:w-[90%] border">
+    <div className="w-full md:w-[90%]">
       <TitleHeader title="Software Skills" />
       {softwareSkills.map((software) => (
         <div key={software.id}>
-          <ListElement icon={software.icon} text={software.softwareName} />
+          <ListElementPrimary
+            icon={software.icon}
+            text={software.softwareName}
+          />
         </div>
       ))}
     </div>

@@ -1,6 +1,6 @@
 import toolsApplication from '../../assets/Data/toolsApplication';
 import TitleHeader from './TitleHeader';
-import ListElement from './ListElement';
+import ListElementPrimary from './ListElementPrimary';
 
 const ToolsApplication = () => {
   return (
@@ -8,7 +8,7 @@ const ToolsApplication = () => {
       <TitleHeader title="Tools Application" />
       {toolsApplication.map((tools) => (
         <div key={tools.id}>
-          <ListElement icon={tools.icon} text={tools.toolName} />
+          <ListElementPrimary icon={tools.icon} text={tools.toolName} />
         </div>
       ))}
     </div>

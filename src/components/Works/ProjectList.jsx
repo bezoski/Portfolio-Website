@@ -2,9 +2,9 @@ import { PiGithubLogoFill } from 'react-icons/pi';
 import { HiOutlineSignal } from 'react-icons/hi2';
 
 const ProjectList = ({ projects, filter }) => {
-  const filteredProjects = projects.filter(
-    (project) => filter === 'all' || project.category === filter
-  );
+  const filteredProjects = projects
+    .filter((project) => filter === 'all' || project.category === filter)
+    .reverse();
 
   return (
     <div>

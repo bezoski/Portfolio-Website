@@ -27,7 +27,7 @@ const Projects = [
   },
   {
     id: 3,
-    projectName: 'Real Estate Website',
+    projectName: 'Welcome Home',
     category: 'web',
     image: welcomehome,
     description:

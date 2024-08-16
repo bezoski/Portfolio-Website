@@ -11,7 +11,7 @@ const ProjectDescription = ({ title, description, githubLink, demoLink }) => {
       <div className="flex space-x-3 mt-6">
         {githubLink && (
           <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <button className="w-[124px] md:w-[150px] h-[35px] flex items-center justify-center rounded px-3 space-x-1 bg-primary-flame font-merriweather lg:font-karla text-body-m lg:text-display-xs text-neutral-night hover:bg-primary-floral-white ">
+            <button className="w-[100px] md:w-[150px] h-[35px] flex items-center justify-center rounded px-3 space-x-1 bg-primary-flame font-merriweather lg:font-karla text-body-m lg:text-display-xs text-neutral-night hover:bg-primary-floral-white ">
               <PiGithubLogoFill />
               GitHub
             </button>
@@ -19,7 +19,7 @@ const ProjectDescription = ({ title, description, githubLink, demoLink }) => {
         )}
         {demoLink && (
           <a href={demoLink} target="_blank" rel="noopener noreferrer">
-            <button className="w-[124px] md:w-[150px] h-[35px] flex items-center justify-center rounded px-3 space-x-1 border border-primary-flame font-merriweather lg:font-karla text-body-m lg:text-display-xs text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none">
+            <button className="w-[100px] md:w-[150px] h-[35px] flex items-center justify-center rounded px-3 space-x-1 border border-primary-flame font-merriweather lg:font-karla text-body-m lg:text-display-xs text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none">
               <HiOutlineSignal />
               Demo
             </button>

@@ -12,7 +12,7 @@ const WorksAll = ({ onClose }) => {
     <div className="relative flex flex-col h-full bg-neutral-night">
       <button
         onClick={onClose}
-        className="absolute top-4 right-4 text-primary-floral-white text-2xl p-3 bg-primary-flame rounded-full z-20"
+        className="absolute top-1 right-1 md:top-4 md:right-4 text-primary-floral-white text-2xl p-3 bg-primary-flame rounded-full z-20"
       >
         <IoMdClose />
       </button>
@@ -20,7 +20,7 @@ const WorksAll = ({ onClose }) => {
         <HeaderAll />
         <ProjectFilters setFilter={setFilter} currentFilter={filter} />
       </div>
-      <div className="flex-1 overflow-y-auto p-4">
+      <div className="flex-1 overflow-y-auto overflow-x-hidden p-4 flex justify-center">
         <ProjectList projects={Projects} filter={filter} />
       </div>
     </div>

@@ -16,7 +16,7 @@ const SharedLayout = () => {
   return (
     <div className="flex flex-col h-screen ">
       <Navbar />
-      <div className={`flex-grow ${getBackgroundStyle()}`}>
+      <div className={`flex-grow mt-24 ${getBackgroundStyle()}`}>
         <Outlet />
       </div>
       <Footer />

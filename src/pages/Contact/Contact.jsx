@@ -4,7 +4,7 @@ import ContactWays from '../../components/Contact/ContactWays';
 import Description from '../../components/Contact/Description';
 import PageNumber from '../../components/General/PageNumber';
 import SocialIcons from '../../components/Contact/SocialIcons';
-import Form from '../../components/General/Form';
+import Form from '../../components/Contact/Form';
 
 import { MdEmail } from 'react-icons/md';
 import { FaDiscord } from 'react-icons/fa';

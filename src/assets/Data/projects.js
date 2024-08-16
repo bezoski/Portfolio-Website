@@ -8,7 +8,7 @@ const Projects = [
     category: 'web',
     image: welcomehome,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      'Website with real estate offers such as houses, apartments and offices. ',
     githubLink: 'https://github.com/bezoski/react-real-estate-app',
   },
   {
@@ -17,7 +17,7 @@ const Projects = [
     projectName: 'Flowvue app',
     image: flowvue,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ',
+      'A program for time management and helping to organize every day. The project was created during HackHeroes 2023.',
     githubLink: 'https://github.com/bezoski/Automatizasion',
     demoLink: 'https://flowvue.vercel.app/',
   },

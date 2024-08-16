@@ -60,7 +60,7 @@ const Works = () => {
               My recent projects
             </h1>
             <p className="font-merriweather text-body-xs md:text-body-s lg:text-body-m text-primary-floral-white text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Here are my latest projects. If you want you can check them out.
             </p>
           </div>
           <div className="w-[30%] flex justify-end">

@@ -1,5 +1,5 @@
 import { NavLink, Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import Logo from '../../assets/Images/logo.svg';
 import { RxHamburgerMenu } from 'react-icons/rx';
@@ -16,8 +16,17 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const handleMenuAndLinkClick = () => {
+    toggleMenu();
+    handleLinkClick();
   };
 
   const navLinkActive = ({ isActive }) =>
@@ -26,7 +35,7 @@ const Navbar = () => {
     }`;
 
   return (
-    <nav className="py-8 px-16 bg-neutral-night">
+    <nav className="fixed w-full h-24 top-0 z-10 py-8 px-16 bg-neutral-night ">
       <div className="mx-auto flex justify-between items-center select-none">
         <Link to="/">
           <img
@@ -35,6 +44,7 @@ const Navbar = () => {
             draggable="false"
             onMouseDown={(event) => event.preventDefault()}
             onContextMenu={(event) => event.preventDefault()}
+            onClick={() => handleLinkClick()}
           />
         </Link>
 
@@ -42,7 +52,11 @@ const Navbar = () => {
         <ul className="hidden md:flex text-primary-floral-white space-x-8 font-merriweather text-body-m">
           {navLinks.map(({ path, label }) => (
             <li key={path}>
-              <NavLink to={path} className={navLinkActive}>
+              <NavLink
+                to={path}
+                className={navLinkActive}
+                onClick={() => handleLinkClick()}
+              >
                 {label}
               </NavLink>
             </li>
@@ -80,7 +94,7 @@ const Navbar = () => {
                   <NavLink
                     to={path}
                     className={navLinkActive}
-                    onClick={toggleMenu}
+                    onClick={handleMenuAndLinkClick}
                   >
                     {label}
                   </NavLink>

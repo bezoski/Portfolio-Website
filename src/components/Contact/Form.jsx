@@ -76,7 +76,8 @@ const Form = () => {
       setMessageSent(false);
     } else {
       setErrors({});
-      sendEmail(); // Call sendEmail only if no errors
+      //if no error
+      sendEmail();
     }
   };
 
@@ -91,7 +92,7 @@ const Form = () => {
 
   const getErrorMessage = () => {
     if (errors.server) {
-      return errors.server; // Display server error message
+      return errors.server;
     }
     if (Object.keys(errors).length > 0) {
       return errors.email

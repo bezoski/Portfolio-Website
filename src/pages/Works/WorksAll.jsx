@@ -12,7 +12,7 @@ const WorksAll = ({ onClose }) => {
     <div className="relative flex flex-col h-full bg-neutral-night">
       <button
         onClick={onClose}
-        className="absolute top-1 right-1 md:top-4 md:right-4 text-primary-floral-white text-2xl p-3 bg-primary-flame rounded-full z-20"
+        className="absolute top-1 right-1 md:top-4 md:right-4 text-primary-floral-white text-2xl p-3 bg-primary-flame hover:text-neutral-night hover:bg-primary-floral-white rounded-full z-20"
       >
         <IoMdClose />
       </button>

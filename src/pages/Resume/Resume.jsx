@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import PageNumber from '../../components/General/PageNumber';
 import SoftwareSkills from '../../components/Resume/SoftwareSkills';
 import Languages from '../../components/Resume/Languages';
@@ -9,6 +11,9 @@ import Events from '../../components/Resume/Events';
 import Hobbies from '../../components/Resume/Hobbies';
 
 const Resume = () => {
+  useEffect(() => {
+    document.title = 'Resume';
+  }, []);
   return (
     <div className="relative flex flex-col h-full  lg:mx-[13%] md:mx-16">
       <div className="flex flex-col md:flex-row justify-center items-center md:items-start ">

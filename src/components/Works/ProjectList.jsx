@@ -34,7 +34,7 @@ const ProjectList = ({ projects, filter }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <button className="w-[80px] h-[30px] flex items-center justify-center rounded px-3 space-x-1 bg-primary-flame  text-neutral-night hover:bg-primary-floral-white ">
+                        <button className="w-[80px] h-[30px] flex items-center justify-center rounded px-3 bg-primary-flame  text-neutral-night hover:bg-primary-floral-white ">
                           <i className="text-body-m">
                             <PiGithubLogoFill />
                           </i>
@@ -50,7 +50,7 @@ const ProjectList = ({ projects, filter }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <button className="w-[80px] h-[30px] flex items-center justify-center rounded px-3 space-x-1 border border-primary-flame text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none">
+                        <button className="w-[80px] h-[30px] flex items-center justify-center rounded px-3 border border-primary-flame text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none">
                           <i className="text-body-m">
                             <HiOutlineSignal />
                           </i>

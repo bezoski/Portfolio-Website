@@ -6,6 +6,10 @@ import Projects from '../../assets/Data/projects';
 import WorksAll from '../Works/WorksAll';
 
 const Works = () => {
+  useEffect(() => {
+    document.title = 'Works';
+  }, []);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const modalRef = useRef(null);
 
@@ -64,7 +68,7 @@ const Works = () => {
               className="w-[74px] h-[24px] md:w-[80px] md:h-[32px] lg:w-[110px] lg:h-[50px] mt-2 font-merriweather lg:font-karla text-body-s md:text-body-m lg:text-display-xs text-primary-floral-white bg-primary-flame rounded hover:bg-primary-floral-white hover:text-neutral-night"
               onClick={showModal}
             >
-              More
+              Show All
             </button>
           </div>
         </div>

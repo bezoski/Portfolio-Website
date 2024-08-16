@@ -1,9 +1,14 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import TypingAnimation from '../../components/Home/TypingAnimation';
 import Button from '../../components/Home/Button';
 import PageNumber from '../../components/General/PageNumber';
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Bezoski's Portfolio";
+  }, []);
+
   return (
     <div className="relative flex flex-col justify-center items-center md:items-start h-full lg:mx-[13%] md:mx-16">
       <h1 className="font-karla text-display-m md:text-display-l lg:text-display-xl text-primary-floral-white uppercase text-center md:text-left">

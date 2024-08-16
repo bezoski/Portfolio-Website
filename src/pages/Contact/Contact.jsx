@@ -1,13 +1,18 @@
+import { useEffect } from 'react';
+
 import ContactWays from '../../components/Contact/ContactWays';
 import Description from '../../components/Contact/Description';
 import PageNumber from '../../components/General/PageNumber';
-
-import { MdEmail } from 'react-icons/md';
-import { FaDiscord } from 'react-icons/fa';
 import SocialIcons from '../../components/Contact/SocialIcons';
 import Form from '../../components/General/Form';
 
+import { MdEmail } from 'react-icons/md';
+import { FaDiscord } from 'react-icons/fa';
+
 const Contact = () => {
+  useEffect(() => {
+    document.title = 'Contact';
+  }, []);
   return (
     <div className="relative flex flex-col h-full md:mx-16 lg:mx-[13%]">
       <h1 className="text-karla text-display-s md:text-display-m lg:text-display-xl text-primary-floral-white uppercase text-center ">

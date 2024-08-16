@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import PageNumber from '../../components/General/PageNumber';
@@ -10,6 +11,10 @@ import Button from '../../components/About/Button';
 import avatar from '../../assets/Images/avatar.png';
 
 const About = () => {
+  useEffect(() => {
+    document.title = 'About';
+  }, []);
+
   return (
     <div className="relative flex flex-col min-h-full mx-4 md:mx-16 lg:mx-[13%]">
       <div className="flex flex-col justify-center items-center md:flex-row mt-4">

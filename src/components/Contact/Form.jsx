@@ -144,10 +144,15 @@ const Form = () => {
         name="message"
         value={formData.message}
         onChange={handleChange}
-        className={`w-[90%] md:w-full h-[125px] md:h-[150px] ${inputStyles} ${
+        className={`w-[90%] md:w-full ${inputStyles} ${
           errors.message && 'ring-2 ring-red-500'
         }`}
         placeholder="YOUR MESSAGE"
+        style={{
+          height: '150px',
+          overflowY: 'auto',
+          resize: 'none',
+        }}
       />
       <div className="w-1/4 mt-3 md:mt-6">
         <button

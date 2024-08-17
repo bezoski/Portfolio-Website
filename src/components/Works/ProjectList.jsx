@@ -18,10 +18,10 @@ const ProjectList = ({ projects, filter }) => {
             <li key={project.id}>
               <div className="w-[245px] h-[155px] md:w-[300px] md:h-[200px] lg:w-[352px] lg:h-[245px] rounded-lg overflow-hidden shadow-md">
                 <div
-                  className="w-full h-[70%]  bg-cover bg-center"
+                  className="w-full h-[65%] bg-cover bg-center"
                   style={{ backgroundImage: `url(${project.image})` }}
                 />
-                <div className="flex flex-row h-[30%] justify-between items-center p-2 bg-secondary-gunmetal">
+                <div className="flex flex-row h-[35%] justify-between items-center p-2 bg-secondary-gunmetal">
                   <div>
                     <h1 className="font-merriweather text-body-xs md:text-body-m text-primary-floral-white">
                       {project.projectName}
@@ -34,13 +34,10 @@ const ProjectList = ({ projects, filter }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <button className="w-[80px] h-[30px] flex items-center justify-center rounded px-3 bg-primary-flame  text-neutral-night hover:bg-primary-floral-white ">
-                          <i className="text-body-m">
+                        <button className="flex items-center justify-center rounded-full p-1 border border-transparent bg-primary-flame text-neutral-night hover:bg-primary-floral-white transition duration-150 ease-in">
+                          <i className="text-body-m md:text-body-l">
                             <PiGithubLogoFill />
                           </i>
-                          <p className="font-merriweather text-body-s">
-                            Github
-                          </p>
                         </button>
                       </a>
                     )}
@@ -50,11 +47,10 @@ const ProjectList = ({ projects, filter }) => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <button className="w-[80px] h-[30px] flex items-center justify-center rounded px-3 border border-primary-flame text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none">
-                          <i className="text-body-m">
+                        <button className="flex items-center justify-center rounded-full p-1 border text-primary-flame border-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-transparent transition duration-150 ease-in">
+                          <i className="text-body-m md:text-body-l">
                             <HiOutlineSignal />
                           </i>
-                          <p className="font-merriweather text-body-s">Demo</p>
                         </button>
                       </a>
                     )}

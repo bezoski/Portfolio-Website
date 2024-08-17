@@ -11,13 +11,20 @@ const Works = () => {
   }, []);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isAnimating, setIsAnimating] = useState(false);
   const modalRef = useRef(null);
 
   const lastProject = Projects[Projects.length - 1];
   const secondLastProject = Projects[Projects.length - 2];
 
   const showModal = () => {
-    setIsModalOpen(!isModalOpen);
+    if (isModalOpen) {
+      setIsAnimating(false);
+      setTimeout(() => setIsModalOpen(false), 200);
+    } else {
+      setIsModalOpen(true);
+      setTimeout(() => setIsAnimating(true), 10);
+    }
   };
 
   const handleClickOutside = (event) => {
@@ -65,7 +72,7 @@ const Works = () => {
           </div>
           <div className="w-[30%] flex justify-end">
             <button
-              className="w-[74px] h-[24px] md:w-[80px] md:h-[32px] lg:w-[110px] lg:h-[50px] mt-2 font-merriweather lg:font-karla text-body-s md:text-body-m lg:text-display-xs text-primary-floral-white bg-primary-flame rounded hover:bg-primary-floral-white hover:text-neutral-night"
+              className="w-[74px] h-[24px] md:w-[80px] md:h-[32px] lg:w-[110px] lg:h-[50px] mt-2 font-merriweather lg:font-karla text-body-s md:text-body-m lg:text-display-xs text-primary-floral-white bg-primary-flame rounded hover:bg-primary-floral-white hover:text-neutral-night transition duration-150 ease-in"
               onClick={showModal}
             >
               Show All
@@ -99,10 +106,16 @@ const Works = () => {
 
       {/* Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-45 flex justify-center items-center z-50">
+        <div
+          className={`fixed inset-0 bg-black bg-opacity-45 flex justify-center items-center z-50 transition-opacity duration-200 ease-out ${
+            isAnimating ? 'opacity-100' : 'opacity-0'
+          }`}
+        >
           <div
             ref={modalRef}
-            className="relative bg-neutral-night p-4 rounded-lg w-[90%] h-[90%] overflow-auto"
+            className={`relative bg-neutral-night p-4 rounded-lg w-[90%] h-[90%] overflow-auto transform transition-transform duration-200 ease-in ${
+              isAnimating ? 'scale-100' : 'scale-95'
+            }`}
           >
             <WorksAll onClose={showModal} />
           </div>

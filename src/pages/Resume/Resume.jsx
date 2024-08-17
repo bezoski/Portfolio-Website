@@ -28,7 +28,7 @@ const Resume = () => {
         </div>
         <div className="flex flex-col w-2/3 md:w-1/3 md:items-end mb-14 md:mb-12">
           <Qualifications />
-          <Events />
+          {/* <Events /> */}
           <Hobbies />
         </div>
       </div>

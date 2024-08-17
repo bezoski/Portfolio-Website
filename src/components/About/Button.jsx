@@ -1,6 +1,6 @@
 const Button = ({ text, fill }) => {
   let btnStyles =
-    'font-merriweather lg:font-karla text-body-m lg:text-display-xs rounded-md px-5 lg:px-8 py-1 hover:text-neutral-night hover:bg-primary-floral-white';
+    'font-merriweather lg:font-karla text-body-m lg:text-display-xs rounded-md px-5 lg:px-8 py-1 hover:text-neutral-night hover:bg-primary-floral-white transition duration-150 ease-in';
 
   if (fill) {
     btnStyles += ' bg-primary-flame text-neutral-night mr-2';

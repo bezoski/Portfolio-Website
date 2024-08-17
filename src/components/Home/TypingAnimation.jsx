@@ -10,8 +10,8 @@ const TypingAnimation = () => {
 
   return (
     <div>
-      <p className="font-merriweather text-body-l md:text-body-xl text-primary-floral-white text-center md:text-left">
-        I&apos;m a <span className="text-primary-flame">{text}</span>
+      <p className="font-merriweather text-body-l md:text-body-xl text-primary-flame text-center md:text-left">
+        {text}
         <span>
           <Cursor cursorStyle="|" style={{ color: '#FFFCF2' }} />
         </span>

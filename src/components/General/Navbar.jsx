@@ -30,12 +30,12 @@ const Navbar = () => {
   };
 
   const navLinkActive = ({ isActive }) =>
-    `hover:text-primary-flame ${
+    `hover:text-primary-flame transition duration-150 ease-in ${
       isActive ? 'text-primary-flame' : 'text-primary-floral-white'
     }`;
 
   return (
-    <nav className="fixed w-full h-24 top-0 z-10 py-8 px-16 bg-neutral-night ">
+    <nav className="fixed w-full h-24 top-0 z-10 py-8 px-16 bg-neutral-night">
       <div className="mx-auto flex justify-between items-center select-none">
         <Link to="/">
           <img

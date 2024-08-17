@@ -152,7 +152,7 @@ const Form = () => {
       <div className="w-1/4 mt-3 md:mt-6">
         <button
           type="submit"
-          className="w-full h-[35px] flex items-center justify-center space-x-2 rounded-md px-2 border border-primary-flame font-merriweather lg:font-karla text-body-m lg:text-display-xs text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none"
+          className="w-full h-[35px] flex items-center justify-center space-x-2 rounded-md px-2 border border-primary-flame font-merriweather lg:font-karla text-body-m lg:text-display-xs text-primary-flame hover:bg-primary-floral-white hover:text-neutral-night hover:border-none transition duration-150 ease-in"
         >
           <p>Send</p>
           <i>

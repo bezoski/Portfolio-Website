@@ -8,21 +8,21 @@ const SocialLinks = () => {
       <a
         href="https://github.com/bezoski"
         target="_blank"
-        className="hover:text-primary-flame"
+        className="hover:text-primary-flame transition duration-150 ease-in"
       >
         <PiGithubLogoFill />
       </a>
       <a
         href="https://www.linkedin.com/in/rafa%C5%82-buczkowski-1a4495258/"
         target="_blank"
-        className="hover:text-primary-flame"
+        className="hover:text-primary-flame transition duration-150 ease-in"
       >
         <FaLinkedin />
       </a>
       <a
         href="https://leetcode.com/u/bezoski/"
         target="_blank"
-        className="hover:text-primary-flame"
+        className="hover:text-primary-flame transition duration-150 ease-in"
       >
         <SiLeetcode />
       </a>

@@ -4,7 +4,7 @@ import { SiLeetcode } from 'react-icons/si';
 
 const SocialIcons = () => {
   let hoverStyles = 'hover:bg-primary-flame hover:text-neutral-night';
-  let iconStyles = `w-[36px] h-[36px] flex justify-center items-center bg-secondary-gunmetal rounded-full ${hoverStyles}`;
+  let iconStyles = `w-[36px] h-[36px] flex justify-center items-center bg-secondary-gunmetal rounded-full transition duration-150 ease-in ${hoverStyles}`;
   return (
     <div className="flex space-x-2 text-primary-floral-white text-[24px]">
       <a

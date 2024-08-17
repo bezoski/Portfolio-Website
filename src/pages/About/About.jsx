@@ -8,7 +8,7 @@ import SocialLinks from '../../components/About/SocialLinks';
 import Description from '../../components/About/Description';
 import Button from '../../components/About/Button';
 
-import avatar from '../../assets/Images/avatar.png';
+import avatar from '/assets/Images/avatar.png';
 
 const About = () => {
   useEffect(() => {

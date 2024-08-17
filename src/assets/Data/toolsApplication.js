@@ -1,9 +1,9 @@
-import TsVscode from '../Icons/ToolsApp/TsVscode.svg';
-import TsUnity from '../Icons/ToolsApp/TsUnity.svg';
-import TsGit from '../Icons/ToolsApp/TsGit.svg';
-import TsFigma from '../Icons/ToolsApp/TsFigma.svg';
-import TsKrita from '../Icons/ToolsApp/TsKrita.svg';
-import TsBlender from '../Icons/ToolsApp/TsBlender.svg';
+import TsVscode from '/assets/Icons/ToolsApp/TsVscode.svg';
+import TsUnity from '/assets/Icons/ToolsApp/TsUnity.svg';
+import TsGit from '/assets/Icons/ToolsApp/TsGit.svg';
+import TsFigma from '/assets/Icons/ToolsApp/TsFigma.svg';
+import TsKrita from '/assets/Icons/ToolsApp/TsKrita.svg';
+import TsBlender from '/assets/Icons/ToolsApp/TsBlender.svg';
 
 const toolsApplication = [
   {

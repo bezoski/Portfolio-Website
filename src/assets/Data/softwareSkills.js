@@ -1,12 +1,12 @@
-import SwHtml from '../Icons/Software/SwHtml.svg';
-import SwCss from '../Icons/Software/SwCss.svg';
-import SwJavascript from '../Icons/Software/SwJavascript.svg';
-import SwReact from '../Icons/Software/SwReact.svg';
-import SwTailwind from '../Icons/Software/SwTailwind.svg';
-import SwCsharp from '../Icons/Software/SwCsharp.svg';
-import SwPython from '../Icons/Software/SwPython.svg';
-import SwSql from '../Icons/Software/SwSql.svg';
-import SwNode from '../Icons/Software/SwNode.svg';
+import SwHtml from '/assets/Icons/Software/SwHtml.svg';
+import SwCss from '/assets/Icons/Software/SwCss.svg';
+import SwJavascript from '/assets/Icons/Software/SwJavascript.svg';
+import SwReact from '/assets/Icons/Software/SwReact.svg';
+import SwTailwind from '/assets/Icons/Software/SwTailwind.svg';
+import SwCsharp from '/assets/Icons/Software/SwCsharp.svg';
+import SwPython from '/assets/Icons/Software/SwPython.svg';
+import SwSql from '/assets/Icons/Software/SwSql.svg';
+import SwNode from '/assets/Icons/Software/SwNode.svg';
 
 const softwareSkills = [
   {

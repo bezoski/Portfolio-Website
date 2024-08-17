@@ -1,7 +1,7 @@
 import { NavLink, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-import Logo from '../../assets/Images/logo.svg';
+import Logo from '/assets/Images/logo.svg';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { IoMdClose } from 'react-icons/io';
 

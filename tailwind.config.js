@@ -8,7 +8,7 @@ export default {
         'drop-custom': '0 0 4px 2px rgba(255, 255, 255, 0.15)',
       },
       backgroundImage: {
-        hero: "url('/homeBackground.png')",
+        hero: "url('/assets/homeBackground.png')",
       },
       backgroundPosition: {
         'custom-position-mobile': '60% 50%',

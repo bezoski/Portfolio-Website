@@ -1,5 +1,5 @@
-import welcomehome from '../Images/Projects/welcomehome.png';
-import flowvue from '../Images/Projects/flowvue.png';
+import welcomehome from '/assets/Images/Projects/welcomehome.png';
+import flowvue from '/assets/Images/Projects/flowvue.png';
 
 const Projects = [
   {

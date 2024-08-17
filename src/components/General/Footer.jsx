@@ -1,4 +1,4 @@
-import Logo from '../../assets/Images/logo.svg';
+import Logo from '/assets/Images/logo.svg';
 
 import { PiGithubLogoFill } from 'react-icons/pi';
 import { FaLinkedin } from 'react-icons/fa';

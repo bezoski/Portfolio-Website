@@ -10,11 +10,11 @@ const Events = () => {
         description="HackYeah Kraków"
         width={40}
       />
-      <ListElementSecondary
+      {/* <ListElementSecondary
         title="2024"
         description="NASA Space Apps Challenge Stalowa Wola"
         width={40}
-      />
+      /> */}
     </div>
   );
 };

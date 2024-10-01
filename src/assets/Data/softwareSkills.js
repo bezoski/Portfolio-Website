@@ -1,6 +1,7 @@
 import SwHtml from '/assets/Icons/Software/SwHtml.svg';
 import SwCss from '/assets/Icons/Software/SwCss.svg';
 import SwJavascript from '/assets/Icons/Software/SwJavascript.svg';
+import SwTypescript from '/assets/Icons/Software/SwTypescript.svg';
 import SwReact from '/assets/Icons/Software/SwReact.svg';
 import SwTailwind from '/assets/Icons/Software/SwTailwind.svg';
 import SwCsharp from '/assets/Icons/Software/SwCsharp.svg';
@@ -26,33 +27,28 @@ const softwareSkills = [
   },
   {
     id: 4,
+    icon: SwTypescript,
+    softwareName: 'TypeScript',
+  },
+  {
+    id: 5,
     icon: SwReact,
     softwareName: 'React',
   },
   {
-    id: 5,
+    id: 6,
     icon: SwTailwind,
     softwareName: 'Tailwind Css',
   },
   {
-    id: 6,
+    id: 7,
     icon: SwCsharp,
     softwareName: 'C#',
   },
   {
-    id: 7,
+    id: 8,
     icon: SwPython,
     softwareName: 'Python',
-  },
-  {
-    id: 8,
-    icon: SwSql,
-    softwareName: 'Sql',
-  },
-  {
-    id: 9,
-    icon: SwNode,
-    softwareName: 'Node Js',
   },
 ];
 

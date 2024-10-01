@@ -10,11 +10,11 @@ const Qualifications = () => {
         description="Creating and administering websites, internet applications and databases"
         width={60}
       />
-      {/* <ListElementSecondary
-        title="XXX.XX"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      <ListElementSecondary
+        title="INF.04"
+        description="Design, programming and testing of applications"
         width={60}
-      /> */}
+      />
     </div>
   );
 };
